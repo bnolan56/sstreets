@@ -1,3 +1,5 @@
+import * as SmartyStreetsSDK from "smartystreets-javascript-sdk";
+
 const SmartyStreetsCore = SmartyStreetsSDK.core;
 const Lookup = SmartyStreetsSDK.usAutocomplete.Lookup;
 
