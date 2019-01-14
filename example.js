@@ -33,6 +33,7 @@
 // 	console.log(response);
 // }
 
+// // Add your credentials to a credentials object.
 const SmartyStreetsCore = SmartyStreetsSDK.core;
 const Lookup = SmartyStreetsSDK.usAutocomplete.Lookup;
 
@@ -62,6 +63,6 @@ function handleError(response) {
 $(function() {
     $(".address1").on("input", function() {
 				console.log("key pressed")
-				$(".address1").val().push(lookup);
+				lookup = $(".address1").val().trim();
 		});
 });
