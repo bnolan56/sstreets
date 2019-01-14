@@ -50,7 +50,7 @@ client.send(lookup)
 
 function logSuggestions(response) {
 	console.log(response.result);
-	$(".address1").html("<select>" + "<option>" + response.result + "</option></select>");
+	$(".address1").html("<select>" + "<option>" + response.result + "</option></select>"); 
 }
 
 function handleError(response) {
