@@ -54,6 +54,7 @@ function logSuggestions(response) {
 
 function handleError(response) {
 	console.log(response);
+	
 }
 
 // Event Listener to push address into lookup
