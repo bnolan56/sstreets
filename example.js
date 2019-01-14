@@ -42,7 +42,7 @@ let credentials = new SmartyStreetsCore.SharedCredentials(websiteKey)
 
 let clientBuilder = new SmartyStreetsCore.ClientBuilder(credentials);
 let client = clientBuilder.buildUsAutocompleteClient();
-let lookup = new Lookup("");
+let lookup = new Lookup("6471 South Cody Way");
 
 client.send(lookup)
 	.then(logSuggestions)
