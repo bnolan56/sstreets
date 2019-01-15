@@ -51,7 +51,11 @@ client.send(lookup)
 
 function logSuggestions(response) {
 	console.log(response.result);
+	lookupResult = response.result;
 	// $(".address1").html("<select>" + "<option>" + response.result + "</option></select>");
+	for (var i = 0; i < lookupREsult.length; i++) {
+		$( "<select><option>" ).text(lookupResult[i]);
+	}
 }
 
 function handleError(response) {
@@ -67,8 +71,9 @@ $(function() {
 		// });
 
 		$( ".address1" ).keyup(function() {
-	    var lookup = new Lookup($(this).val());
-	    $( "<select><option>" ).text(lookup);
+	    var value = $( this ).val();
+			let lookup = new Lookup(value);
+
 	  })
   	.keyup();
 });
