@@ -12,16 +12,16 @@ const candidateOutput = document.getElementById("smartystreets-autocomplete-outp
 
 /* Create an event listener on the input. */
 addressInput.addEventListener("input", e => {
-	// Get the input value.
+	// Grabs the input value.
 	const textInput = e.target.value;
 
-  // Create a new lookup with the input value.
+  // Creates a new lookup with the input value.
   const lookup = new Lookup(textInput);
 
   // Add any additional optional configuration to the lookup, eg. filtering, etc.
   // Options for configuring the lookup can be found in the SDK source code:
   // https://github.com/smartystreets/smartystreets-javascript-sdk/blob/master/src/us_autocomplete/Lookup.js
-  lookup.stateFilter = ["NY"];
+  // lookup.stateFilter = ["NY"];
   // lookup.cityFilter = ["New York"];
 
   // Clear old output to make room for new results.
