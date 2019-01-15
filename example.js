@@ -43,7 +43,7 @@ let credentials = new SmartyStreetsCore.SharedCredentials(websiteKey)
 
 let clientBuilder = new SmartyStreetsCore.ClientBuilder(credentials);
 let client = clientBuilder.buildUsAutocompleteClient();
-let lookup = new Lookup("6471 South Cody Way");
+let lookup = new Lookup("");
 
 client.send(lookup)
 	.then(logSuggestions)
@@ -67,7 +67,7 @@ $(function() {
 		// });
 
 		$( ".address1" ).keyup(function() {
-	    var value = $( this ).val();
+	    var lookup = new Lookup($(this).val());
 	    $( "<select><option>" ).text(value);
 	  })
   	.keyup();
