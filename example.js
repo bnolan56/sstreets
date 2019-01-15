@@ -68,7 +68,7 @@ $(function() {
 
 		$( ".address1" ).keyup(function() {
 	    var lookup = new Lookup($(this).val());
-	    $( "<select><option>" ).text(value);
+	    $( "<select><option>" ).text(lookup);
 	  })
   	.keyup();
 });
